@@ -17,18 +17,19 @@ services:
     ports:
       - 80:80
     restart: always
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    environment:
-      MYSQL_ROOT_PASSWORD: hashcat
-      MYSQL_DATABASE: db
-      MYSQL_USER: dbuser
-      MYSQL_PASSWORD: dbpass
-    links:
-      - db:db
-    ports:
-      - 8080:80
-    environment:
-      PMA_USER: root
-      PMA_PASSWORD: hashcat
-      PMA_HOST: db
+# Uncomment phpmyadmin to do first-time import of database
+#   phpmyadmin:
+#    image: phpmyadmin/phpmyadmin
+#    environment:
+#      MYSQL_ROOT_PASSWORD: hashcat
+#      MYSQL_DATABASE: db
+#      MYSQL_USER: dbuser
+#      MYSQL_PASSWORD: dbpass
+#    links:
+#      - db:db
+#    ports:
+#      - 8080:80
+#    environment:
+#      PMA_USER: root
+#      PMA_PASSWORD: hashcat
+#      PMA_HOST: db
