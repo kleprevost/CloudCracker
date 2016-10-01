@@ -1,0 +1,24 @@
+<?php
+// rename this file to custmenu.php to make it active
+
+// custom menu items
+
+// each menuitem has 3 values and a key by which it is inserted in the custmenuitems array:
+// condition = if this value is true at the time of listing menus, the menu will be shown
+// name = name of the item in the menu
+// source = what the iframe will load
+
+// init the array
+$custmenuitems=array();
+//------------------------------
+// init new menuitem
+$menuitem=array();
+$menuitem["condition"]=(1+1==2);
+$menuitem["name"]="Hashcat web";
+$menuitem["source"]="http://hashcat.net";
+// add it to the array
+$custmenuitems["hcweb"]=$menuitem;
+//------------------------------
+
+
+?>

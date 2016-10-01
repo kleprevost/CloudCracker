@@ -1,0 +1,10 @@
+1. Install webserver with PHP and MySQL
+2. Create new MySQL database with InnoDB engine
+3. Execute hashtopus.sql script inside that database
+4. Configure dbconfig.php to reflect your MySQL connection string
+5. Grant these access rights:
+  - PHP write access on the website directory
+  - MySQL "FILE" privilege and read/write access for the website directory
+6. Call admin.php through website, login with any password
+7. Configure new password in Server configuration
+8. Click Agent deployer to get executable for agents
