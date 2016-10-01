@@ -8,3 +8,5 @@ RUN docker-php-ext-install mysqli
 COPY php.ini /usr/local/etc/php/
 COPY . /var/www/html/
 RUN chmod -R 0755 /var/www/html/
+RUN chown www-data /var/www/html/
+RUN chmod -R 0755 /tmp/
